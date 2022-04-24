@@ -1,0 +1,26 @@
+.icon{
+    color: gray;
+}
+
+.present{
+    background: #c6f6d573;
+    color: #318860;
+}
+.onleave{
+    background-color: #8997a4;
+    color: #859eb6;
+}
+
+.absent{
+    background-color: #ff6a6a;
+    color: #f55858;
+}
+
+.holiday{
+    background-color: #23aaeb;
+   color: #0a92d6;
+}
+.weekend{
+    background-color: #2765ac8a;
+    color: #2764ac;
+}

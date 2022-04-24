@@ -1,0 +1,33 @@
+p{
+    vertical-align: -webkit-baseline-middle;
+}
+button{
+    display: none;
+}
+
+.userButton:focus{
+    box-shadow: none !important;
+}
+
+@media  screen and (max-width: 600px) {
+    .date{
+            font-size: 12px !important;
+            margin-left: 4px !important;
+            margin-right: 4px !important;
+    }
+        .signin{
+            font-size: 12px !important;
+            margin-left: 4px !important;
+            margin-right: 4px !important;
+
+        }
+        .icon{
+            margin-left: 4px !important;
+            margin-right: 4px !important;
+        }
+        .userButton{
+            margin-left: 4px !important;
+            margin-right: 0px !important;
+
+        }
+}
