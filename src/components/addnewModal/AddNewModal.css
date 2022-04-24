@@ -1,0 +1,66 @@
+
+.modalcontainer{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.headers{
+    color: #23aaeb;
+    width: max-content;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 2px solid;
+}
+.filecontainer{
+    display: flex;
+}
+
+.parent{
+    position: relative;
+    border: 2px dashed gray;
+    display: inline-block;
+    width: 225px;
+}
+
+.parent span {
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 17%;
+    top: 39%;
+    font-size: 16px;
+}
+
+.child{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: inherit;
+    left: 0;
+    /* visibility: hidden; */
+    opacity: 0;
+}
+
+.upperinputs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lowerinputs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+
+
+@media screen and (max-width: 767px) {
+    small {
+      font-size: 12px;
+    }
+  }

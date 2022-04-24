@@ -1,17 +1,13 @@
 import { EmailIcon, HamburgerIcon, PhoneIcon } from "@chakra-ui/icons";
 import {
   Avatar,
-  Badge,
   Box,
-  Divider,
   IconButton,
   Menu,
   MenuList,
   Skeleton,
   Stack,
   Text,
-  Tooltip,
-  Button,
   Wrap,
   WrapItem,
   MenuButton,
@@ -83,9 +79,9 @@ const Card = ({ user }) => {
           >
             <Text fontSize="18px">{user.name}</Text>
             <Text fontSize="16" fontWeight={"bold"}>
-              {user.title}
+              {user.position}
             </Text>
-            <Text fontSize="16">{user.job}</Text>
+            <Text fontSize="16">{user.role}</Text>
             <Box d={"flex"} justifyContent={"space-between"} alignItems={"baseline"}>
     
 
@@ -122,25 +118,25 @@ const Card = ({ user }) => {
                   </MenuButton>
                   <MenuList w={"100%"}>
                     <Box className="customtooltib">
-                      <box>
+                      <box >
                         <small fontSize={"14px"} >office</small>
-                        <Text fontSize={"16px"} >Arab Localizer</Text>
+                        <Text fontSize={"16px"} >{user.office}</Text>
                       </box>
                       <box>
-                        <small fontSize={"14px"} >office</small>
-                        <Text fontSize={"16px"} >Arab Localizer</Text>
+                        <small fontSize={"14px"} >Role</small>
+                        <Text fontSize={"16px"} >{user.role}</Text>
                       </box>
                       <box>
-                        <small fontSize={"14px"} >office</small>
-                        <Text fontSize={"16px"} >Arab Localizer</Text>
+                        <small fontSize={"14px"} >Copied Manager</small>
+                        <Text fontSize={"16px"} >{user.manager}</Text>
                       </box>
                       <box>
-                        <small fontSize={"14px"} >office</small>
-                        <Text fontSize={"16px"} >Arab Localizer</Text>
+                        <small fontSize={"14px"} >Joining Date</small>
+                        <Text fontSize={"16px"} >{user.date}</Text>
                       </box>
                       <box>
-                        <small fontSize={"14px"} >office</small>
-                        <Text fontSize={"16px"} >Arab Localizer</Text>
+                        <small fontSize={"14px"} >Manager</small>
+                        <Text fontSize={"16px"} >{user.manager}</Text>
                       </box>
                     </Box>
                   </MenuList>

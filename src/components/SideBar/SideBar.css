@@ -29,6 +29,9 @@
 .sideBar ul li i {
   font-size: 1em;
 }
+.sideBar ul li small {
+  font-size: .7rem;
+}
 .sideBar ul li .notification {
   background: red;
   padding: 3px;

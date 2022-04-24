@@ -9,97 +9,28 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import React from "react";
+import { AppState } from "../../context/context";
 import AddNewModal from "../addnewModal/AddNewModal";
 import Card from "../Card/Card";
 import "./Body.css";
 
 const Body = () => {
-  const users = [
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test1",
-      title: "test title 1",
-      job: "job 1",
-      present: "present",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-    {
-      src: "https://bit.ly/dan-abramov",
-      name: "test 2",
-      title: "test title 2",
-      job: "job 2",
-      present: "absent",
-    },
-  ];
+
+  const {
+    img,
+    name,
+     date,
+     phone,
+     mail,
+     office,
+     depart,
+     attend,
+     role,
+     position,
+     manager,
+     fromHome,users
+  } = AppState();
+
   return (
     <Box className="content">
       <Box d={"flex"} justifyContent={"space-between"} mb={"2"}>
@@ -109,7 +40,8 @@ const Body = () => {
               pointerEvents="none"
               children={<SearchIcon color="blue.300" />}
             />
-            <Input type="tel" placeholder="Phone number" />
+            
+            <Input type="tel" placeholder="Search" />
           </InputGroup>
         </Stack>
         <AddNewModal>
