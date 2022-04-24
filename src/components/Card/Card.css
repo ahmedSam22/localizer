@@ -1,26 +1,71 @@
-.icon{
-    color: gray;
+.icon {
+  color: gray;
 }
 
-.present{
-    background: #c6f6d573;
-    color: #318860;
+.present {
+  background: #c6f6d573;
+  color: #318860;
 }
-.onleave{
-    background-color: #8997a4;
-    color: #859eb6;
-}
-
-.absent{
-    background-color: #ff6a6a;
-    color: #f55858;
+.onleave {
+  background-color: #8997a4;
+  color: #859eb6;
 }
 
-.holiday{
-    background-color: #23aaeb;
-   color: #0a92d6;
+.absent {
+  background-color: #ff6a6a;
+  color: #f55858;
 }
-.weekend{
-    background-color: #2765ac8a;
-    color: #2764ac;
+
+.holiday {
+  background-color: #23aaeb;
+  color: #0a92d6;
+}
+.weekend {
+  background-color: #2765ac8a;
+  color: #2764ac;
+}
+
+.singleCard {
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.09);
+}
+
+.foriconbuttons {
+  width: 55% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: baseline !important;
+}
+
+/* .foriconbuttons:hover {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
+} */
+
+
+.customtooltib{
+    width: 100% !important;
+    padding: 10px;
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: space-between  ;
+}
+
+
+.css-46p1lt>*:not(style)~*:not(style):last-child {
+
+    width: 80%;
+}
+
+.customicon{
+    /* margin: 10px; */
+}
+
+.foricons{
+    align-items: baseline;
+}
+.foricons i{
+    font-size: 12px;
 }

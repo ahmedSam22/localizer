@@ -13,9 +13,10 @@ function App() {
         </div>
         <div className="navbar--body">
           <NavBar></NavBar>
+          <Body></Body>
+
         </div>
         <div className="content-block">
-          <Body></Body>
         </div>
       </div>
     </div>

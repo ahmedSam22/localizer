@@ -4,8 +4,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  /* -ms-flex-direction: column; */
+  /* flex-direction: column; */
   height: 100%;
   background-image: linear-gradient(to bottom, #39a4dc, #2763ab);
 }
@@ -27,13 +27,13 @@
 }
 
 .sideBar ul li i {
-  font-size: 2em;
+  font-size: 1em;
 }
 .sideBar ul li .notification {
   background: red;
-  padding: 5px;
-  right: 13px;
-  top: 15px;
+  padding: 3px;
+  right: 30px;
+  top: 1px;
   font-size: 12px;
   position: absolute;
 }
